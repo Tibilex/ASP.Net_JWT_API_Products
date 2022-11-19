@@ -30,7 +30,7 @@
             <input type="text" class="input">
           </div>  
           <div class="buttons__section">
-            <button class="button">add product</button>
+            <button class="button" id="addProduct" type="submit">add product</button>
             <a href="/index.html" class="log__out">log out</a>
           </div>
         </div>
@@ -39,15 +39,15 @@
       <div class="product__section product__item">
         <div class="item__product">
           <p>Namescsac:</p>
-          <textarea class="input" name="name" id="name" cols="20" rows="2"></textarea>
+          <input class="input" name="name" id="productName" cols="20" rows="2"></input>
           <p>Description:</p>
-          <textarea class="input" name="description" id="description" cols="20" rows="2"></textarea>
+          <input class="input" name="description" id="productDescription" cols="20" rows="2"></input>
           <p>Cost:</p>
-          <input type="text" class="input">
+          <input type="text" id="productCost" class="input">
           <p>Stock:</p>
-          <input type="text" class="input">
+          <input type="text" id="productStock" class="input">
           <p>Image URL:</p>
-          <input type="text" class="input">
+          <input type="text" id="productImageUrl" class="input">
           <div class="buttons__section">
             <button class="button">update</button>
             <button class="button">delete</button>
@@ -55,5 +55,6 @@
         </div>
       </div>
     </div>
+    <script src="/js/main.js"></script>
 </body>
 </html>

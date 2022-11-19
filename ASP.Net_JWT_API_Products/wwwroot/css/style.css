@@ -32,30 +32,13 @@ h3 {
   font-size: 16px;
 }
 
-.header__container {
-  position: relative;
-  display: flex;
-  width: 1440px;
-  min-height: 60px;
-  padding: 10px;
-  background-color: #242B33;
-}
-
 .form {
-  position: absolute;
-  top: 200px;
-  display: none;
-  z-index: 2;
-  width: 300px;
-  height: 400px;
-  background-color: #242B33;
-}
-
-.form__position {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  width: 1440px;
+  height: 100px;
+  background-color: #242B33;
 }
 
 .sign-in__button {
@@ -172,5 +155,10 @@ input {
 }
 
 .check__box {
-  accent-color: #8fbc8f;
+  padding-top: 10px;
+}
+
+.login__register {
+  padding-top: 10px;
+  min-width: 300px;
 }/*# sourceMappingURL=style.css.map */

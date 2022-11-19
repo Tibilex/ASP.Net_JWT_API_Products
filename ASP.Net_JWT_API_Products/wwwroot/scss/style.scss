@@ -46,29 +46,13 @@ h3{
 
 }
 
-.header__container{
-    position: relative;
-    display: flex;
-    width: $maxWidth;
-    min-height: 60px;
-    padding: 10px;
-    background-color: $colorDark;
-}
-
 .form{
-    position: absolute;
-    top: 200px;
-    display: none;
-    z-index: 2;
-    width: 300px;
-    height: 400px;
-    background-color: $colorDark;
-}
-.form__position{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    width: $maxWidth;
+    height: 100px;
+    background-color: $colorDark;
 }
 
 .sign-in__button{
@@ -180,5 +164,11 @@ input{
 }
 
 .check__box{
-    accent-color: $colorSalat;  
+
+    padding-top: 10px;
+}
+
+.login__register{
+    padding-top: 10px;
+    min-width: 300px;
 }
