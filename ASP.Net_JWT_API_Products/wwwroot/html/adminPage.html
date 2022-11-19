@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/css/adm_styles.css">
+    <title>Admin Controll</title>
+</head>
+<body>
+    <div class="container">
+      <div class="control__section section__item">
+        <div class="section">
+          <div class="item__inputs">
+            <p>Name:</p>
+            <textarea class="input" name="name" id="name" cols="20" rows="2"></textarea>
+            <p>Description:</p>
+            <textarea class="input" name="description" id="description" cols="20" rows="2"></textarea>
+            <p>Cost:</p>
+            <input type="text" class="input">
+            <p>Stock:</p>
+            <input type="text" class="input">
+            <p>Image URL:</p>
+            <input type="text" class="input">
+          </div>  
+          <div class="buttons__section">
+            <button class="button">add product</button>
+            <a href="/index.html" class="log__out">log out</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product__section product__item">
+        <div class="item__product">
+          <p>Namescsac:</p>
+          <textarea class="input" name="name" id="name" cols="20" rows="2"></textarea>
+          <p>Description:</p>
+          <textarea class="input" name="description" id="description" cols="20" rows="2"></textarea>
+          <p>Cost:</p>
+          <input type="text" class="input">
+          <p>Stock:</p>
+          <input type="text" class="input">
+          <p>Image URL:</p>
+          <input type="text" class="input">
+          <div class="buttons__section">
+            <button class="button">update</button>
+            <button class="button">delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

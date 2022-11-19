@@ -1,0 +1,136 @@
+$minWidth: 320px;
+$maxWidth: 1440px;
+
+// colors ========================================================//
+$colorRed: #d81d48;
+$colorDark: #242B33;
+$colorSalat: #8fbc8f;
+$colorLightBrawn: #b3b3b3;
+
+// default font parameter ========================================//
+$fontFamily: "roboto";
+$fontSize: 16px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily, san-sarif ;
+}
+
+body{
+    background-color: #404244;
+}
+
+h3{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $colorSalat;
+    font-weight: 300;
+}
+
+.imput__forgot{
+    color: $colorSalat;
+    letter-spacing: 1px;
+    padding: 0 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: $maxWidth;
+    font-size: $fontSize;
+
+}
+
+.control__section{
+    width: 30%;
+    background-color: $colorDark;
+    height: 100%;
+}
+
+.section{
+    padding: 20px ;
+}
+
+p{
+    color: $colorSalat;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.input{
+    margin: 5px 0 0 0;
+    min-height: 30px;
+    width: 100%;
+}
+
+.button{
+    position: relative;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .4s;
+    min-height: 50px;
+    width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 1;
+    overflow: hidden;
+    letter-spacing: 2px;
+    color: $colorSalat;
+    border: 2px solid $colorSalat;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: #242B33;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #8fbc8f;
+    transform: skewX(35deg);
+    transition: width 1s;
+    z-index: -1;
+}
+
+.button:hover::before{
+    width: 150%;
+}
+
+.buttons__section{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0 ;
+}
+
+.product__section{
+    width: 70%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item__product{
+    width: 300px;
+    min-height: 400px;
+    background-color: $colorDark;
+    padding: 10px;
+}
+
+.log__out{
+    color: $colorSalat;
+    font-size: 20px;
+}
